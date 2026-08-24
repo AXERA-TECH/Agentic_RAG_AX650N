@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3)",
+      "Bash(ldconfig -p)",
+      "Bash(dpkg -L libtesseract4)",
+      "Bash(conda install *)",
+      "Bash(python3 -c ' *)"
+    ]
+  }
+}

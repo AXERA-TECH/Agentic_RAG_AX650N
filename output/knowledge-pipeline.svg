@@ -1,0 +1,217 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1550 1830" width="1550" height="1830">
+  <style>
+    text { font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Microsoft YaHei", "Microsoft JhengHei", "SimHei", sans-serif; }
+    /* Readability pass for the large 1550×1830 canvas. Inline sizes are
+       intentionally promoted in tiers so secondary labels remain legible
+       when the full diagram is viewed at fit-to-screen scale. */
+    text[font-size="13"] { font-size:16px !important; }
+    text[font-size="15"] { font-size:18px !important; }
+    text[font-size="16"] { font-size:19px !important; }
+    text[font-size="18"] { font-size:21px !important; }
+    text[font-size="19"] { font-size:22px !important; }
+    text[font-size="20"] { font-size:23px !important; }
+    text[font-size="21"] { font-size:24px !important; }
+    text[font-size="22"] { font-size:26px !important; }
+    text[font-size="23"] { font-size:26px !important; }
+    text[font-size="24"] { font-size:27px !important; }
+    /* Stronger connector strokes for print and fit-to-screen viewing. */
+    line[stroke-width="1.6"] { stroke-width:2.4px !important; }
+    line[stroke-width="2"] , path[stroke-width="2"] { stroke-width:2.8px !important; }
+    line[stroke-width="2.2"] , path[stroke-width="2.2"] { stroke-width:3px !important; }
+    line[stroke-width="2.4"] , path[stroke-width="2.4"] { stroke-width:3.2px !important; }
+    path[stroke-width="2.6"] { stroke-width:3.4px !important; }
+  </style>
+  <defs>
+    <marker id="a-b" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L7 4 L1 7" fill="none" stroke="#2563eb" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="a-g" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L7 4 L1 7" fill="none" stroke="#16a34a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="a-o" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L7 4 L1 7" fill="none" stroke="#ea580c" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="a-p" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L7 4 L1 7" fill="none" stroke="#7c3aed" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="a-gy" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="userSpaceOnUse">
+      <path d="M1 1 L7 4 L1 7" fill="none" stroke="#6b7280" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <filter id="sh" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Canvas -->
+  <rect width="1550" height="1830" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="775" y="48" text-anchor="middle" fill="#111827" font-size="36" font-weight="700">知识管线流程</text>
+
+  <!-- ============================================================
+       SECTION 1 — 入库与索引  (y 70..1010)
+       Spine: KG / FTS5 / Embedding lanes
+       ============================================================ -->
+  <rect x="24" y="70" width="1502" height="940" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5" stroke-dasharray="8,4"/>
+  <rect x="36" y="82" width="150" height="34" rx="4" fill="#f8fafc"/>
+  <text x="48" y="106" fill="#64748b" font-size="22" font-weight="700" letter-spacing="0.06em">入库与索引</text>
+
+  <!-- Input content -->
+  <text x="775" y="132" text-anchor="middle" fill="#111827" font-size="25" font-weight="600">输入内容</text>
+  <text x="775" y="158" text-anchor="middle" fill="#64748b" font-size="16">文本 / 图片 / 音频 / 视频 · PDF / Office</text>
+  <line x1="775" y1="168" x2="775" y2="198" stroke="#2563eb" stroke-width="2.4" marker-end="url(#a-b)"/>
+
+  <!-- Parse -->
+  <rect x="615" y="200" width="320" height="84" rx="8" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="775" y="232" text-anchor="middle" fill="#1e40af" font-size="24" font-weight="600">Parse / 输入解析</text>
+  <text x="775" y="260" text-anchor="middle" fill="#64748b" font-size="16">文档解析或媒体分类</text>
+  <line x1="775" y1="284" x2="775" y2="318" stroke="#2563eb" stroke-width="2.4" marker-end="url(#a-b)"/>
+
+  <!-- ContentList -->
+  <rect x="595" y="320" width="360" height="84" rx="8" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="775" y="352" text-anchor="middle" fill="#1e40af" font-size="24" font-weight="600">ContentList</text>
+  <text x="775" y="380" text-anchor="middle" fill="#64748b" font-size="16">统一内容表示</text>
+  <line x1="775" y1="404" x2="775" y2="438" stroke="#2563eb" stroke-width="2.4" marker-end="url(#a-b)"/>
+
+  <!-- Process -->
+  <rect x="575" y="440" width="400" height="88" rx="8" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="775" y="472" text-anchor="middle" fill="#1e40af" font-size="24" font-weight="600">Process / 模态处理</text>
+  <text x="775" y="502" text-anchor="middle" fill="#64748b" font-size="15">文本分块 · 图片描述 · 视频帧提取 · 音频转写</text>
+  <line x1="775" y1="528" x2="775" y2="562" stroke="#2563eb" stroke-width="2.4" marker-end="url(#a-b)"/>
+
+  <!-- Index -->
+  <rect x="615" y="564" width="320" height="80" rx="8" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="775" y="598" text-anchor="middle" fill="#1e40af" font-size="24" font-weight="600">Index / 索引阶段</text>
+  <text x="775" y="626" text-anchor="middle" fill="#64748b" font-size="16">分发至三类存储</text>
+
+  <!-- 3-way fan-out: Index to the three storage builders -->
+  <line x1="775" y1="644" x2="775" y2="668" stroke="#2563eb" stroke-width="2.4"/>
+  <path d="M 775,668 L 215,668 L 215,700" stroke="#7c3aed" stroke-width="2.4" fill="none" marker-end="url(#a-p)"/>
+  <line x1="775" y1="668" x2="775" y2="700" stroke="#2563eb" stroke-width="2.4" marker-end="url(#a-b)"/>
+  <path d="M 775,668 L 1335,668 L 1335,700" stroke="#16a34a" stroke-width="2.4" fill="none" marker-end="url(#a-g)"/>
+  <text x="495" y="658" text-anchor="middle" fill="#7c3aed" font-size="18" font-weight="700">① KG</text>
+  <text x="797" y="658" fill="#2563eb" font-size="18" font-weight="700">② FTS5</text>
+  <text x="1055" y="658" text-anchor="middle" fill="#16a34a" font-size="18" font-weight="700">③ Embedding</text>
+
+  <!-- Builder row @ y 700..790 -->
+  <rect x="45" y="700" width="340" height="90" rx="8" fill="#faf5ff" stroke="#e9d5ff" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="215" y="734" text-anchor="middle" fill="#6b21a8" font-size="24" font-weight="600">① KG Builder</text>
+  <text x="215" y="764" text-anchor="middle" fill="#64748b" font-size="15">enable_kg 时构建实体及关系图谱</text>
+
+  <rect x="605" y="700" width="340" height="90" rx="8" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="775" y="734" text-anchor="middle" fill="#1e40af" font-size="24" font-weight="600">② SQLite FTS5</text>
+  <text x="775" y="764" text-anchor="middle" fill="#64748b" font-size="16">BM25 全文索引</text>
+
+  <rect x="1165" y="700" width="340" height="90" rx="8" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="1335" y="734" text-anchor="middle" fill="#166534" font-size="24" font-weight="600">③ Embedding 向量化</text>
+  <text x="1335" y="764" text-anchor="middle" fill="#64748b" font-size="16">文本 / 多模态向量化</text>
+
+  <!-- Builder → storage arrows -->
+  <line x1="215" y1="790" x2="215" y2="838" stroke="#7c3aed" stroke-width="2.2" marker-end="url(#a-p)"/>
+  <line x1="775" y1="790" x2="775" y2="838" stroke="#2563eb" stroke-width="2.2" marker-end="url(#a-b)"/>
+  <line x1="1335" y1="790" x2="1335" y2="838" stroke="#16a34a" stroke-width="2.2" marker-end="url(#a-g)"/>
+
+  <!-- Storage row @ y 840..892 -->
+  <rect x="45" y="840" width="340" height="52" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="215" y="873" text-anchor="middle" fill="#6b21a8" font-size="18" font-weight="600">knowledge_graph.json</text>
+
+  <rect x="605" y="840" width="340" height="52" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="775" y="873" text-anchor="middle" fill="#1e40af" font-size="18" font-weight="600">SQLite (内嵌 FTS5 索引)</text>
+
+  <rect x="1165" y="840" width="340" height="52" rx="8" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" filter="url(#sh)"/>
+  <text x="1335" y="873" text-anchor="middle" fill="#166534" font-size="18" font-weight="600">Milvus Lite (Dense Vector)</text>
+
+  <!-- ============================================================
+       SECTION 2 — 检索  (y 1030..1820)
+       Spine: query split into BM25 and Dense lanes
+       ============================================================ -->
+  <rect x="24" y="1030" width="1502" height="790" rx="12" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.5" stroke-dasharray="8,4"/>
+  <rect x="36" y="1042" width="80" height="34" rx="4" fill="#f8fafc"/>
+  <text x="48" y="1066" fill="#64748b" font-size="22" font-weight="700" letter-spacing="0.06em">检索</text>
+
+  <!-- Query input -->
+  <rect x="895" y="1090" width="320" height="88" rx="8" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="1055" y="1124" text-anchor="middle" fill="#1e40af" font-size="23" font-weight="600">查询文本 / 可选查询图片</text>
+  <text x="1055" y="1154" text-anchor="middle" fill="#64748b" font-size="15">Query Embedding + Query Text</text>
+
+  <!-- Query split into two retrieval lanes -->
+  <line x1="1055" y1="1178" x2="1055" y2="1224" stroke="#2563eb" stroke-width="2.4"/>
+  <path d="M 1055,1224 L 775,1224 L 775,1246" stroke="#2563eb" stroke-width="2.4" fill="none" marker-end="url(#a-b)"/>
+  <path d="M 1055,1224 L 1335,1224 L 1335,1246" stroke="#16a34a" stroke-width="2.4" fill="none" marker-end="url(#a-g)"/>
+  <text x="905" y="1216" text-anchor="middle" fill="#2563eb" font-size="16" font-weight="600">Query Text</text>
+  <text x="1205" y="1216" text-anchor="middle" fill="#16a34a" font-size="16" font-weight="600">Query Embedding</text>
+
+  <!-- Retriever row @ y 1248..1344 -->
+  <rect x="605" y="1248" width="340" height="96" rx="8" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="775" y="1286" text-anchor="middle" fill="#1e40af" font-size="24" font-weight="600">BM25 / FTS5 检索</text>
+  <text x="775" y="1318" text-anchor="middle" fill="#64748b" font-size="16">SQLite 全文匹配</text>
+
+  <rect x="1165" y="1248" width="340" height="96" rx="8" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="1335" y="1286" text-anchor="middle" fill="#166534" font-size="24" font-weight="600">Milvus Dense 检索</text>
+  <text x="1335" y="1318" text-anchor="middle" fill="#64748b" font-size="16">向量相似度搜索</text>
+
+  <!-- Cross-section data reads (dashed, meet the query bus) -->
+  <line x1="775" y1="892" x2="775" y2="1210" stroke="#1e40af" stroke-width="2" stroke-dasharray="7,5" marker-end="url(#a-b)"/>
+  <text x="787" y="1060" fill="#1e40af" font-size="16" font-style="italic">读取 FTS5</text>
+  <line x1="1335" y1="892" x2="1335" y2="1210" stroke="#166534" stroke-width="2" stroke-dasharray="7,5" marker-end="url(#a-g)"/>
+  <text x="1347" y="1060" fill="#166534" font-size="16" font-style="italic">读取 Milvus</text>
+
+  <!-- Merge both lanes into the first RRF stage -->
+  <path d="M 775,1344 L 775,1380 L 1041,1380" stroke="#2563eb" stroke-width="2.2" fill="none" marker-end="url(#a-b)"/>
+  <path d="M 1335,1344 L 1335,1380 L 1069,1380" stroke="#16a34a" stroke-width="2.2" fill="none" marker-end="url(#a-g)"/>
+
+  <!-- 初次 RRF -->
+  <rect x="915" y="1384" width="280" height="80" rx="40" fill="#fff7ed" stroke="#fb923c" stroke-width="2.2" filter="url(#sh)"/>
+  <text x="1055" y="1416" text-anchor="middle" fill="#9a3412" font-size="23" font-weight="700">初次 RRF 融合</text>
+  <text x="1055" y="1442" text-anchor="middle" fill="#9a3412" font-size="15">Reciprocal Rank Fusion</text>
+
+  <!-- RRF → decision diamond -->
+  <line x1="1055" y1="1464" x2="1055" y2="1492" stroke="#ea580c" stroke-width="2.4" marker-end="url(#a-o)"/>
+
+  <!-- Decision diamond @ center (1055,1542) -->
+  <polygon points="1055,1494 1165,1542 1055,1590 945,1542" fill="#ffffff" stroke="#fb923c" stroke-width="2.2" filter="url(#sh)"/>
+  <text x="1055" y="1536" text-anchor="middle" fill="#9a3412" font-size="19" font-weight="700">KG</text>
+  <text x="1055" y="1562" text-anchor="middle" fill="#9a3412" font-size="16">已启用?</text>
+
+  <!-- KG data read: knowledge_graph.json to the Yes branch -->
+  <path d="M 215,892 L 215,1542 L 240,1542" stroke="#6b21a8" stroke-width="2" stroke-dasharray="7,5" fill="none" marker-end="url(#a-p)"/>
+  <text x="227" y="1210" fill="#6b21a8" font-size="16" font-style="italic">读取 KG</text>
+
+  <!-- Yes branch → 候选实体语义邻居扩展 -->
+  <path d="M 945,1542 L 215,1542 L 215,1608" stroke="#7c3aed" stroke-width="2.6" fill="none" marker-end="url(#a-p)"/>
+  <text x="560" y="1532" text-anchor="middle" fill="#7c3aed" font-size="18" font-weight="700">Yes</text>
+
+  <!-- No branch → 去重/过滤 -->
+  <line x1="1055" y1="1590" x2="1055" y2="1608" stroke="#6b7280" stroke-width="2.4" marker-end="url(#a-gy)"/>
+  <text x="1072" y="1604" fill="#6b7280" font-size="18" font-weight="700">No</text>
+
+  <!-- 候选实体语义邻居扩展 -->
+  <rect x="45" y="1610" width="340" height="92" rx="8" fill="#faf5ff" stroke="#e9d5ff" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="215" y="1646" text-anchor="middle" fill="#6b21a8" font-size="22" font-weight="600">候选实体的语义邻居扩展</text>
+  <text x="215" y="1676" text-anchor="middle" fill="#64748b" font-size="15">Knowledge Graph 邻近检索</text>
+
+  <!-- 候选实体 → 再次 RRF -->
+  <line x1="385" y1="1656" x2="445" y2="1656" stroke="#7c3aed" stroke-width="2.2" marker-end="url(#a-p)"/>
+
+  <!-- 再次 RRF -->
+  <rect x="447" y="1610" width="280" height="92" rx="8" fill="#fff7ed" stroke="#fb923c" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="587" y="1646" text-anchor="middle" fill="#9a3412" font-size="23" font-weight="600">再次 RRF</text>
+  <text x="587" y="1676" text-anchor="middle" fill="#9a3412" font-size="15">Dense + BM25 + Graph</text>
+
+  <!-- 去重 / 过滤 -->
+  <rect x="915" y="1610" width="280" height="92" rx="8" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="1055" y="1646" text-anchor="middle" fill="#1e40af" font-size="23" font-weight="600">去重 / 过滤</text>
+  <text x="1055" y="1676" text-anchor="middle" fill="#64748b" font-size="15">内容去重与排序</text>
+
+  <!-- 再次 RRF → 去重/过滤 (merge before Top-K) -->
+  <line x1="727" y1="1656" x2="901" y2="1656" stroke="#ea580c" stroke-width="2.2" marker-end="url(#a-o)"/>
+
+  <!-- 去重/过滤 → Top-K -->
+  <line x1="1055" y1="1702" x2="1055" y2="1736" stroke="#2563eb" stroke-width="2.4" marker-end="url(#a-b)"/>
+
+  <!-- Top-K 上下文 -->
+  <rect x="915" y="1738" width="280" height="80" rx="40" fill="#1e40af" stroke="#1e3a8a" stroke-width="1.8" filter="url(#sh)"/>
+  <text x="1055" y="1770" text-anchor="middle" fill="#ffffff" font-size="23" font-weight="700">Top-K 上下文</text>
+  <text x="1055" y="1796" text-anchor="middle" fill="#bfdbfe" font-size="15">检索结果返回 LLM</text>
+
+</svg>

@@ -1,0 +1,80 @@
+# Agentic RAG Default Configuration
+
+app_name: agentic_rag
+debug: false
+log_level: INFO
+
+default_provider: openai
+
+# LLM Providers
+llm_providers:
+  openai:
+    api_key: "${OPENAI_API_KEY}"
+    api_base: "https://api.openai.com/v1"
+    model: "gpt-4o"
+    max_tokens: 4096
+    temperature: 0.7
+    vision_model: "gpt-4o"
+
+  claude:
+    api_key: "${ANTHROPIC_API_KEY}"
+    api_base: "https://api.anthropic.com"
+    model: "claude-sonnet-4-20250514"
+    max_tokens: 4096
+    temperature: 0.7
+    vision_model: "claude-sonnet-4-20250514"
+
+  local:
+    api_key: ""
+    api_base: "http://localhost:11434/v1"
+    model: "llama3"
+    max_tokens: 4096
+    temperature: 0.7
+    vision_model: ""
+
+# Embedding Model (for RAG vector search)
+# Can use a different provider from the LLM
+embedding:
+  provider: "openai"                   # Which provider config to use for API key
+  model: "text-embedding-3-small"      # Embedding model name
+  dim: 1536                             # Vector dimension (must match Milvus)
+  api_key: ""                           # Override API key (empty = reuse provider's)
+  api_base: ""                          # Override API base (empty = reuse provider's)
+  batch_size: 100                       # Max texts per batch
+
+# Milvus
+milvus:
+  host: "localhost"
+  port: 19530
+  collection_prefix: "agentic_rag"
+  dim: 1536
+  index_type: "IVF_FLAT"
+  metric_type: "COSINE"
+
+# Memory
+memory:
+  short_term_max_tokens: 8000
+  long_term_top_k: 10
+  working_memory_max_keys: 50
+
+# Session
+session:
+  ttl_seconds: 3600
+  cleanup_interval_seconds: 300
+
+# API
+api:
+  host: "0.0.0.0"
+  port: 8000
+  cors_origins: ["*"]
+  rate_limit_per_minute: 60
+
+# Voice
+voice:
+  stt_model: "whisper-1"
+  tts_provider: "edge"
+  tts_voice: "zh-CN-XiaoxiaoNeural"
+  sample_rate: 16000
+
+# MCP Servers (external)
+mcp_servers: {}

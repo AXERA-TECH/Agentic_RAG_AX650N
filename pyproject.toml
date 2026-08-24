@@ -1,0 +1,81 @@
+[project]
+name = "agentic-rag"
+version = "0.1.0"
+description = "Agentic RAG System — Multi-modal, ReAct-powered, MCP-enabled"
+requires-python = ">=3.10"
+readme = "README.md"
+
+dependencies = [
+    # Web framework and file uploads
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.30",
+    "sse-starlette>=2.0",
+    "python-multipart>=0.0.9",
+
+    # Default LLM provider (also supports local OpenAI-compatible services)
+    "openai>=1.60",
+    "langfuse>=3.0",
+
+    # Vector database
+    "pymilvus[milvus-lite]>=2.5",
+
+    # Data and configuration
+    "pydantic>=2.8",
+    "pydantic-settings>=2.5",
+    "pyyaml>=6.0",
+
+    # CLI
+    "typer>=0.15",
+    "rich>=13.0",
+
+    # HTTP and async file I/O
+    "httpx>=0.28",
+    "aiofiles>=24.0",
+]
+
+[project.optional-dependencies]
+anthropic = [
+    "anthropic>=0.40",
+]
+voice = [
+    # Remote SenseVoice/Kokoro clients; models run on AX8850
+    "aiohttp>=3.10",
+    "numpy>=1.26,<2.3",
+    "soundfile>=0.12",
+    "librosa>=0.10",
+    "pydub>=0.25",
+]
+media = [
+    "opencv-python>=4.10",
+]
+documents = [
+    "pymupdf>=1.24",
+    "docling>=2.0",
+]
+gateways = [
+    "websockets>=13.0",
+    "pycryptodome>=3.20",
+]
+dev = [
+    "pytest>=8.3",
+    "pytest-asyncio>=0.24",
+    "pytest-cov>=5.0",
+    "pillow>=10.0",
+    "ruff>=0.7",
+    "mypy>=1.13",
+]
+
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["agentic_rag*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]

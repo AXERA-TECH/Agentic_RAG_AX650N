@@ -1,0 +1,33 @@
+{
+  "mcpServers": {
+    "tavily-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "tavily-mcp@0.2.20"
+      ],
+      "env": {
+        "TAVILY_API_KEY": "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"
+      },
+      "disabled": true
+    },
+    "weather_fastmcp": {
+      "command": "python",
+      "args": [
+        "-m",
+        "weather_server.server"
+      ],
+      "env": {},
+      "disabled": true
+    },
+    "bing-search": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "bing-cn-mcp"
+      ],
+      "env": {},
+      "disabled": false
+    }
+  }
+}
