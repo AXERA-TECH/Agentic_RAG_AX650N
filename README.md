@@ -491,8 +491,7 @@ workspace/uploads/               # 上传文件缓存
 按优先级查找配置：
 
 1. `mcp_servers.json`
-2. `mcp_servers.yaml`
-3. MCP 环境变量
+2. MCP 环境变量
 
 推荐使用不含密钥的配置文件，通过环境变量提供凭据：
 
