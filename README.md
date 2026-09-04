@@ -6,11 +6,6 @@
 
 基于 **ReAct Agent** 的多模态检索增强生成（RAG）系统，支持文本、图片、音频、视频的统一入库与跨模态检索，提供智能问答、工具调用、MCP 扩展、流式对话、语音交互等完整能力。支持 OpenAI / 本地 OpenAI-compatible 模型，可灵活部署在云端或边缘设备上。
 
-[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/downloads/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.115%2B-009688.svg)](https://fastapi.tiangolo.com/)
-[![React 19](https://img.shields.io/badge/React-19-61DAFB.svg)](https://react.dev/)
-[![Milvus Lite](https://img.shields.io/badge/Vector%20Store-Milvus%20Lite-orange.svg)](https://milvus.io/)
-[![License](https://img.shields.io/badge/License-Apache%202.0-green.svg)](LICENSE)
 
 > 当前版本：`0.1.0`。部分能力还需要进一步开发验证。
 >
